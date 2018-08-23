@@ -7,7 +7,7 @@
 - Employee Class
 
 ```javascript
-var Shopper = require("./Shopper");
+const Shopper = require("./Shopper");
 
 class Employee extends Shopper {
   constructor(name, money = 0, employer = "") {
@@ -43,7 +43,7 @@ module.exports = Person;
 - Shopper Class
 
 ```javascript
-var Person = require("./Person");
+const Person = require("./Person");
 
 class Shopper extends Person {
   constructor(name, money = 0) {
@@ -59,10 +59,10 @@ module.exports = Shopper;
 - userFactory
 
 ```javascript
-var Employee = require("./Employee");
-var Shopper = require("./Shopper");
+const Employee = require("./Employee");
+const Shopper = require("./Shopper");
 
-var userFactory = (name, money = 0, type, employer) => {
+const userFactory = (name, money = 0, type, employer) => {
   if (type === "employee") {
     return new Employee(name, money, employer);
   } else {
@@ -76,10 +76,10 @@ module.exports = userFactory;
 - Implementation (index.js)
 
 ```javascript
-var userFactory = require("./userFactory");
+const userFactory = require("./userFactory");
 
-var alex = userFactory("Alex Banks", 100);
-var eve = userFactory("Eve Porcello", 100, "employee", "This and That");
+const alex = userFactory("Alex Banks", 100);
+const eve = userFactory("Eve Porcello", 100, "employee", "This and That");
 
 eve.payDay(100);
 

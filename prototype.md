@@ -27,8 +27,8 @@ class Shopper {
   }
 
   clone() {
-    var proto = Object.getPrototypeOf(this);
-    var cloned = Object.create(proto);
+    const proto = Object.getPrototypeOf(this);
+    const cloned = Object.create(proto);
 
     cloned._name = this._name;
     cloned._shoppingList = [...this._shoppingList];
@@ -43,9 +43,9 @@ module.exports = Shopper;
 ```javascript
 //scout_prototype.js
 
-var Shopper = require("./Shopper");
+const Shopper = require("./Shopper");
 
-var scout = new Shopper();
+const scout = new Shopper();
 scout.addItemToList("camping knife");
 scout.addItemToList("tent");
 scout.addItemToList("backpack");
@@ -56,13 +56,13 @@ module.exports = scout;
 
 ```javascript
 //index.js
-var scout_prototype = require("./scout_prototype");
+const scout_prototype = require("./scout_prototype");
 
-var alex = scout_prototype.clone();
+const alex = scout_prototype.clone();
 alex.name = "Alex Banks";
 alex.addItemToList("slingshot");
 
-var eve = scout_prototype.clone();
+const eve = scout_prototype.clone();
 eve.name = "Eve Porcello";
 eve.addItemToList("reading light");
 

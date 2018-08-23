@@ -72,7 +72,7 @@ module.exports = new Logger();
 - Shopper Class
 
 ```javascript
-var logger = require("./Logger");
+const logger = require("./Logger");
 
 class Shopper {
   constructor(name, money = 0) {
@@ -88,14 +88,14 @@ module.exports = Shopper;
 - index.js
 
 ```javascript
-var logger = require("./Logger");
-var Shopper = require("./Shopper");
-var Store = require("./Store");
+const logger = require("./Logger");
+const Shopper = require("./Shopper");
+const Store = require("./Store");
 
 logger.log("starting app...");
 
-var alex = new Shopper("alex", 500);
-var ski_shop = new Store("Steep and Deep Supplies", [
+const alex = new Shopper("alex", 500);
+const ski_shop = new Store("Steep and Deep Supplies", [
   {
     item: "Downhill Skis",
     qty: 5,
