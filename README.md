@@ -4,4 +4,4 @@
 
 ## References
 
-> This content is a resume of the [**Node.js: Design Patterns**](https://www.linkedin.com/learning/node-js-design-patterns) By [Alex Banks](https://www.linkedin.com/learning/instructors/alex-banks)
+> This content is about my notes of the [**Node.js: Design Patterns**](https://www.linkedin.com/learning/node-js-design-patterns) course By [Alex Banks](https://www.linkedin.com/learning/instructors/alex-banks)
